@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NO GRAVITY - Productos</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+
+    <header class="Encabezado">
+        <img class="Encabezado__Menu" src="../img/menuincircularbutton-mod.png" alt="">
+        <h1 class="Encabezado__Nombre"> NO GRAVITY </h1>
+        <img class="Encabezado__Carrito" src="img/logo-carritoss.png" alt="">
+        <img class="Encabezado__Usuario" src="img/userincircularbutton-mod.png" alt=""> 
+    </header>
+<!-- aca debo implementar lo del menu desplegable cuando se achica la pantalla-->
+    <nav class="Menu__Barra"> 
+        <ul>
+            <li class="Menu__Item"><a href="index.html"> HOME </a></li>
+            <li class="Menu__Item"><a href="empresa.html"> NOSOTROS </a></li>
+            <li class="Menu__Item"><a href="ejercicios.html"> EJERCICIOS </a></li>
+            <li class="Menu__Item"><a href="productos.html"> TIENDA </a> </li>
+            <li class="Menu__Item"><a href="nutricion.html"> NUTRICION</a> </li>
+            <li class="Menu__Item"><a href="acceso.html"> ACCESO </a> </li>
+        </ul>
+    </nav>
+
+    <div class="Banner">
+        <img class="Banner__Imagen" src="img/banner-productoss.png" alt="Hombre haciendo deporte">
+        <p class="Banner__Frase--Modificacion"> EL LIMITE LO PONES TU! </p> 
+    </div>
+
+    <form class="Buscador" action="post">
+        <input class="Buscador__Campo" type="search" placeholder="Busca aqui tu producto" name="buscar" id="buscar">
+        <input class="Buscador__Boton" type="submit" value="Buscar">
+    </form>
+
+    <aside id="Barra__Filtro">
+        <ul class="Filtro">
+            <li class="Filtro__Categoria">MARCA
+                <ul class="Categoria__Opcion">
+                    <li>Sonnos</li>
+                    <li>Power</li>
+                    <li>White protein</li>
+                </ul>
+            </li>
+            <li class="Filtro__Categoria">PRECIO
+                <ul class="Categoria__Opcion">
+                    <li>Hasta $500</li>
+                    <li>Desde $500 hasta $1.500</li>
+                    <li>Desde $1.500 hasta $5.000</li>
+                    <li>Mas de $10.000</li>
+                </ul>
+            </li>
+            <li class="Filtro__Categoria">CUOTAS
+                <ul class="Categoria__Opcion">
+                    <li>3 cuotas</li>
+                    <li>6 cuotas</li>
+                    <li>12 cuotas</li>
+                </ul>
+            </li>
+            <li class="Filtro__Categoria">UBICACION
+                <ul class="Categoria__Opcion">
+                    <li>C.A.B.A</li>
+                    <li>G.C.B.A</li>
+                    <li>Cordoba</li>
+                    <li>Santa Fe</li>
+                    <li>Entre Rios</li>
+                    <li>Corrientes</li>
+                    <li>La Pampa</li>
+                    <li>Mendoza</li>
+                </ul>
+            </li>
+            <li class="Filtro__Categoria">ENVIO
+                <ul class="Categoria__Opcion">
+                    <li>Gratis</li>
+                </ul>
+            </li>
+        </ul>
+    </aside>
+
+<!--colocar cuatro articulos asi no se deforma la grid y alinear el aside-->
+    <main id="Principal">
+        <h2> INDUMENTARIA </h2>
+        <section class="Contenido__Principal">
+            <article class="Principal__Articulo">
+                <picture class="Articulo__Ilustracion">
+                    <img src="img/productos/conjuntoss.jpg" alt="Conjuntos slim fit" class="conjuntos">
+                </picture>
+                <h3 class="Articulo__Titulo"> CONJUNTOS </h3>
+            </article>
+            <article class="Principal__Articulo">
+                <picture class="Articulo__Ilustracion">
+                    <img src="img/productos/remera-modi.jpg" alt="Remeras y musculosas" class="Remeras">
+                </picture>
+                <h3 class="Articulo__Titulo"> REMERAS Y MUSCULOSAS </h3>
+            </article>
+            <article class="Principal__Articulo">
+                <picture class="Articulo__Ilustracion">
+                    <img src="img/productos/zapatillas.png" alt="Zapatillas deportivas" class="Zapatilla">
+                </picture>
+                <h3 class="Articulo__Titulo"> CALZADO </h3>
+            </article>
+        </section>
+
+        <section class="Contenido__Principal">
+            <h2> EJERCICIOS </h2>
+            <article class="Principal__Articulo">
+                <picture class="Articulo__Ilustracion">
+                    <img src="img/productos/barrass.jpg" alt="Barras para discos" class="none">
+                </picture>
+                <h3 class="Articulo__Titulo"> BARRAS CROMADAS </h3>
+            </article>
+            <article class="Principal__Articulo">
+                <picture class="Articulo__Ilustracion">
+                    <img src="img/productos/discoss.jpg" alt="Discos para barras de banco" class="none">
+                </picture>
+                <h3 class="Articulo__Titulo"> DISCOS </h3>
+            </article>
+            <article class="Principal__Articulo">
+                <picture class="Articulo__Ilustracion">
+                    <img src="img/productos/mancuernass.jpg" alt="Mancuernas de arena" class="none">
+                </picture>
+                <h3 class="Articulo__Titulo"> MANCUERNAS </h3>
+            </article>
+        </section>
+              
+        <section class="Contenido__Principal">
+            <h2> SUPLEMENTOS </h2>
+            <article class="Articulo">
+                <picture class="Articulo__Ilustracion">
+                    <img src="img/productos/AMINOACIDOS.jpg" alt="Pildoras aminoacido y proteinas" class="none">
+                </picture>
+                <h3 class="Articulo__Titulo"> AMINOACIDOS </h3>
+            </article>
+            <article class="Articulo">
+                <picture class="Articulo__Ilustracion">
+                    <img src="img/productos/ANIMALS.jpg" alt="Pack de nutrientes" class="none">
+                </picture>
+                <h3 class="Articulo__Titulo"> ANIMAL PACKS</h3>
+            </article>
+            <article class="Articulo">
+                <picture class="Articulo__Ilustracion">
+                    <img src="img/productos/suplementos.jpg" alt="Suplementos deportivos" class="none">
+                </picture>
+                <h3 class="Articulo__Titulo"> SUPLEMENTOS </h3>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <footer class="Pie">
+            <img class="Pie__Logo" src="img/Logo-empresa-3.png" alt="Logo No Gravity">
+            <div class="Pie__Item">
+                <div>EMPRESA</div>
+                <div>SOCIAL</div>
+                <div>LEGAL</div>
+                <div>CONTACTO</div>
+            </div>
+        </footer>
+</body>
+</html>
